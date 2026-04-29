@@ -1,0 +1,31 @@
+{
+  "name": "jike-publish",
+  "version": "1.0.0",
+  "description": "用于发布内容到即刻（Jike）的工具",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "jike-publish": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "jike",
+    "即刻",
+    "publish",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "jike-sdk": "^0.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
